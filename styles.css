@@ -27,25 +27,46 @@ header {
     text-align: center;
     align-content: center;
     letter-spacing: 0.2rem;
+    z-index: 10;
 }
 
 h1 {
     display: inline;
-    font-size: 8rem;
+    font-size: 9rem;
+    -webkit-text-stroke: 0.01rem rgba(55, 245, 8, 0.783);
 }
 
 span {
-    font-size: 3rem;
+    font-size: 4rem;
+    -webkit-text-stroke: 0.1rem rgba(55, 245, 8, 0.783);
+}
+
+/*background image*/
+.bg-image {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("resources/intro_background2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: saturate(200%) blur(0.1rem) brightness(60%);
+    z-index: 0;
 }
 
 /*footer section*/
 footer {
     grid-area: footer;
     justify-items: end;
+    z-index: 10;
 }
 
 footer p {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    -webkit-text-stroke: 0.05rem rgba(55, 245, 8, 0.783);
 }
 
 
