@@ -82,6 +82,7 @@ footer a {
     text-decoration: none;
 }
 
+/*footer hover effect*/
 footer p {
     font-size: 2rem;
     font-weight: lighter;
@@ -90,7 +91,7 @@ footer p {
 
 footer p:hover {
     cursor: poiter;
-    -webkit-text-stroke: 0.1rem rgb(255, 102, 0);
+    -webkit-text-stroke: 0.1rem rgb(255, 255, 255);
 }
 
 
