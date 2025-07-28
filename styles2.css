@@ -1,5 +1,36 @@
+/*Global setting*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*header setting*/
+header {
+    background-color: rgb(0, 0, 0);
+    border: solid 2px red;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+/*navigation setting*/
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
 }
