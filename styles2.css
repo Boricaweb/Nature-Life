@@ -61,3 +61,68 @@ nav ul li:hover {
     background-color: rgba(255, 228, 196, 0.678);
     border-radius: 2rem;
 }
+
+/*Main setting*/
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+}
+/*intro section setting*/
+section.intro {
+    background-color: aliceblue;
+    border-radius: 1rem;
+    width: 50%;
+    margin: 0.5rem auto 1rem 2rem;
+    padding: 1rem 3rem 1rem 3rem;
+    line-height: 1.5;
+}
+
+section.intro h2 {
+    margin-bottom: 1rem;
+}
+/*button section setting*/
+section.selected-button {
+    text-align: center;
+    margin: 1.5rem 0 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section.selected-button a {
+    background-color: aquamarine;
+    padding: 2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0.4rem rgb(57, 115, 113);
+    font-weight: bolder;
+}
+/*selected sky-button effect*/
+section.selected-button a.sky-button:hover {
+    background-image: url("resources/sky_button bg.jpg");
+    background-size: cover;
+    color: rgb(0, 243, 255);
+}
+
+section.selected-button a.sky-button:active {
+    background-image: url("resources/sky_button bg.jpg");
+    background-size: cover;
+    color: rgb(0, 242, 255);
+    box-shadow: 0 0.1rem rgb(57, 115, 113);
+    transform: translateY(0.3rem);
+}
+/*selected wild-button effect*/
+section.selected-button a.wild-button:hover {
+    background-image: url("resources/wild_button bg.jpg");
+    background-size: cover;
+    color: rgb(21, 255, 0);
+}
+
+section.selected-button a.wild-button:active {
+    background-image: url("resources/wild_button bg.jpg");
+    background-size: cover;
+    color: rgb(21, 255, 0);
+    box-shadow: 0 0.1rem rgb(57, 115, 113);
+    transform: translateY(0.3rem);
+}
