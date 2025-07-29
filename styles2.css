@@ -102,27 +102,45 @@ section.selected-button a {
 section.selected-button a.sky-button:hover {
     background-image: url("resources/sky_button bg.jpg");
     background-size: cover;
-    color: rgb(0, 243, 255);
+    color: transparent;
 }
 
 section.selected-button a.sky-button:active {
     background-image: url("resources/sky_button bg.jpg");
     background-size: cover;
-    color: rgb(0, 242, 255);
     box-shadow: 0 0.1rem rgb(57, 115, 113);
     transform: translateY(0.3rem);
+    color: transparent;
 }
 /*selected wild-button effect*/
 section.selected-button a.wild-button:hover {
     background-image: url("resources/wild_button bg.jpg");
     background-size: cover;
-    color: rgb(21, 255, 0);
+    color: transparent;
 }
 
 section.selected-button a.wild-button:active {
     background-image: url("resources/wild_button bg.jpg");
     background-size: cover;
-    color: rgb(21, 255, 0);
     box-shadow: 0 0.1rem rgb(57, 115, 113);
     transform: translateY(0.3rem);
+    color: transparent;
+}
+
+/*content section setting*/
+section#content {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+section#content article {
+    border: solid 0.1rem white;
+    padding: 2rem;
+}
+
+section#content img {
+    width: 30rem;
+    height: 30rem;
 }
