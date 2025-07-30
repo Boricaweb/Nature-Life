@@ -26,7 +26,7 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: solid 0.25rem black;
+    border-bottom: solid 0.25rem black;
     position: sticky;
     top: 0;
     text-align: center;
@@ -176,9 +176,38 @@ section#member {
     align-items: center;
     color: rgb(0, 0, 0);
     background-color:rgb(255, 255, 255);
+    margin-bottom: 2rem;
 }
 
 section#member h3 {
     margin: 1.5rem 0;
     font-size: 2rem;
+}
+
+section#member .member-description {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section#member img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 20%;
+}
+
+section#member figcaption {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section#member p {
+    width: 20rem;
+}
+
+/*contact section setting*/
+footer {
+    color: white;
+    padding: 1rem;
 }
