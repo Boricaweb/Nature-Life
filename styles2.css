@@ -1,4 +1,11 @@
 /*Global setting*/
+@font-face {
+    font-family: "Caveat";
+    src: url("Caveat/Caveat-VariableFont_wght.ttf") format("truetype"),
+    url("Caveat/Caveat-VariableFont_wght.woff") format("woff"),
+    url("Caveat/Caveat-VariableFont_wght.woff2") format("woff2");
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -26,9 +33,10 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-bottom: solid 0.25rem black;
+    border-bottom: solid 0.1rem black;
     position: sticky;
     top: 0;
+    z-index: 10;
     text-align: center;
     font-family: 'Vilanders Sans', sans-serif;
 }
@@ -73,22 +81,31 @@ nav ul li:hover {
 main {
     display: flex;
     flex-direction: column;
-    /*background-color: rgb(0, 0, 0);*/
+    font-family: "Caveat", sans-serif, monospace;
 }
 /*intro section setting*/
 section.intro {
     background-color: aliceblue;
     border-radius: 1rem;
-    border: solid 0.25rem black;
     width: 50%;
-    margin: 0.5rem auto 1rem 2rem;
-    padding: 1rem 3rem 1rem 3rem;
+    margin: 0.5rem auto 1rem 0;
+    padding: 1rem 3rem 1rem 6rem;
     line-height: 1.5;
+    position: relative;
+    left: -1rem;
+    z-index: 0;
 }
 
 section.intro h2 {
     margin-bottom: 1rem;
+    font-weight: bolder;
+    font-size: 2rem;
 }
+
+section.intro p {
+    font-size: 1.5rem;
+}
+
 /*button section setting*/
 section.selected-button {
     text-align: center;
@@ -105,6 +122,7 @@ section.selected-button a {
     color: black;
     box-shadow: 0 0.5rem rgb(72, 188, 184);
     font-weight: bolder;
+    font-size: 2rem;
     transition: background-image 0.5s, color 0.5s;
 }
 /*selected sky-button effect*/
