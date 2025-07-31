@@ -39,20 +39,22 @@ header {
     z-index: 10;
     text-align: center;
     font-family: 'Vilanders Sans', sans-serif;
+    width: 100vw;
 }
 /*navigation setting*/
-nav ul {
+/*desktop condition*/
+nav.desktop ul {
     display: flex;
     justify-content: space-evenly;
 }
 
-nav li {
+nav.desktop li {
     list-style: none;
     font-weight: lighter;
     transition: background-color 0.5s, border-radius 0.5s;
 }
 
-nav ul a {
+nav.desktop ul a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
@@ -72,10 +74,23 @@ nav ul a {
     font-size: 2rem;
 }
 /*nav bar hover effect*/
-nav ul li:hover {
+nav.desktop ul li:hover {
     background-color: rgba(255, 228, 196, 0.678);
     border-radius: 50%;
 }
+
+/*condition for only mobile*/
+nav.mobile ul {
+    display: none;
+}
+/*icon setting
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}*/
 
 /*Main setting*/
 main {
@@ -99,7 +114,7 @@ section.intro {
 section.intro h2 {
     margin-bottom: 1rem;
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 section.intro p {
@@ -122,7 +137,7 @@ section.selected-button a {
     color: black;
     box-shadow: 0 0.5rem rgb(72, 188, 184);
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: background-image 0.5s, color 0.5s;
 }
 /*selected sky-button effect*/
@@ -160,6 +175,7 @@ section#content {
     color: white;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 3rem;
 }
 
@@ -172,6 +188,8 @@ section#content article {
 section#content h3 {
     text-align: center;
     margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 section#content img {
@@ -181,6 +199,7 @@ section#content img {
 
 section#content p {
     width: 30rem;
+    font-size: 1.5rem;
 }
 
 section#content p.sky-no1, p.wild-no1 {
@@ -200,6 +219,7 @@ section#member {
 section#member h3 {
     margin: 1.5rem 0;
     font-size: 2rem;
+    font-weight: bold;
 }
 
 section#member .member-description {
@@ -207,6 +227,7 @@ section#member .member-description {
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 section#member img {
@@ -218,14 +239,32 @@ section#member img {
 section#member figcaption {
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 section#member p {
     width: 20rem;
+    font-size: 1rem;
 }
 
 /*contact section setting*/
 footer {
     color: white;
     padding: 1rem;
+}
+
+/*media queries*/
+@media all and (max-width: 430px) {
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile ul {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 0.5rem;
+    }
+
+    
 }
