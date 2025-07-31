@@ -1,9 +1,17 @@
 /*Global setting*/
+/*Web font*/
 @font-face {
     font-family: "Caveat";
     src: url("Caveat/Caveat-VariableFont_wght.ttf") format("truetype"),
     url("Caveat/Caveat-VariableFont_wght.woff") format("woff"),
     url("Caveat/Caveat-VariableFont_wght.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Vilanders Sans";
+    src: url("vilanders-sans-cdnfonts/VilanderssansStamp-BWDPn.otf") format("opentype"),
+    url("vilanders-sans-cdnfonts/VilanderssansStamp-BWDPn.woff") format("woff"),
+    url("vilanders-sans-cdnfonts/VilanderssansStamp-BWDPn.woff2") format("woff2");
 }
 
 * {
@@ -25,6 +33,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 /*header setting*/
@@ -39,7 +48,6 @@ header {
     z-index: 10;
     text-align: center;
     font-family: 'Vilanders Sans', sans-serif;
-    width: 100vw;
 }
 /*navigation setting*/
 /*desktop condition*/
@@ -83,14 +91,6 @@ nav.desktop ul li:hover {
 nav.mobile ul {
     display: none;
 }
-/*icon setting
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}*/
 
 /*Main setting*/
 main {
@@ -256,6 +256,7 @@ footer {
 
 /*media queries*/
 @media all and (max-width: 430px) {
+    /*for nav bar section*/
     nav.desktop {
         display: none;
     }
@@ -266,5 +267,21 @@ footer {
         margin-top: 0.5rem;
     }
 
-    
+    nav.mobile img {
+        min-width: 2.5rem;
+        min-height: 2.5rem;
+        transition: background-color 0.5s, border-radius 0.5s;
+    }
+
+    nav.mobile img:hover {
+        background-color: rgba(255, 228, 196, 0.678);
+        border-radius: 50%;
+    }
+
+    /*for intro section*/
+    section.intro {
+        width: 80%;
+        margin: 0.5rem auto 1rem 0;
+        padding: 1rem 3rem 1rem 6rem;
+    }
 }

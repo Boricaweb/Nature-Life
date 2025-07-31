@@ -1,4 +1,12 @@
 /*Global setting*/
+/*web font*/
+@font-face {
+    font-family: "Vilanders Sans";
+    src: url("vilanders-sans-cdnfonts/VilanderssansStamp-BWDPn.otf") format("opentype"),
+    url("vilanders-sans-cdnfonts/VilanderssansStamp-BWDPn.woff") format("woff"),
+    url("vilanders-sans-cdnfonts/VilanderssansStamp-BWDPn.woff2") format("woff2");
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
